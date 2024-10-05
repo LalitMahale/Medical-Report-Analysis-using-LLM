@@ -1,0 +1,6 @@
+python-dotenv==1.0.1
+pymupdf==1.24.11
+easyocr==1.7.2
+google-generativeai==0.7.2
+streamlit==1.38.0
+pillow==10.4.0
