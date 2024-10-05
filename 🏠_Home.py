@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st  
 from src.pipeline import Pipeline
 from dotenv import load_dotenv
 import os
