@@ -29,3 +29,7 @@ Many people find it challenging to understand medical reports, especially those 
 
 ⚠️ **Disclaimer**: This project is for **educational purposes only** 📚 and is not a substitute for professional medical advice.
 
+
+### Video :-
+
+[Demo](https://github.com/LalitMahale/Medical-Report-Analysis-using-LLM/blob/main/videos/medical_report_analyzer_video.mp4)
