@@ -1,6 +1,6 @@
 experiments/.ipynb_checkpoints*
 .env
-src/__*
+src/__pycache__*
 utils/__*
 test_images/__*
 temp_image*
