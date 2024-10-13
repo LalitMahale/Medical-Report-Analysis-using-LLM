@@ -1,3 +1,3 @@
-LOCAL_TEST = False
-MODEL_NAME = "gemini-pro"
-OCR_MODEL_LANGUAGE = "en"
+LOCAL_TEST = False   # if local test = True than pass the pdf file path 
+MODEL_NAME = "gemini-pro" # LLM model name 
+OCR_MODEL_LANGUAGE = "en" # ocr model language.

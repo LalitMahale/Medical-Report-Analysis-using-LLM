@@ -1,7 +1,8 @@
 import fitz
 from PIL import Image
-from .setting import LOCAL_TEST
+from src.setting import LOCAL_TEST
 import numpy as np
+from src import logging
 
 
 class PDF_Processing:
@@ -30,9 +31,15 @@ class PDF_Processing:
 
             return image_np
         except Exception as e:
-            print(e)
+            logging.info(f"Error {e} : pdf_to_image")
 
     def load_image(file):
-        image = Image.open(file)
-        image_np = np.array(image)
-        return image_np
+        """
+        This function take image and return numpy array
+        """
+        try:
+            image = Image.open(file)
+            image_np = np.array(image)
+            return image_np
+        except Exception as e:
+            logging.info(f"Error {e} : load_image")
