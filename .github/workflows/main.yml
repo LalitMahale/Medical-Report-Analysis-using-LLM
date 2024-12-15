@@ -24,4 +24,4 @@ jobs:
         run: |
           git config --global credential.helper store
           git remote set-url origin https://Lalit1997:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Lalit1997/medical-report-analyzer
-          git push --force staging
+          git push --force origin main
