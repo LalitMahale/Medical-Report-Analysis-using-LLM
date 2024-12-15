@@ -1,9 +1,12 @@
-
 name: Sync to Hugging Face hub
 on:
   push:
     branches: [staging]
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 342c2a2 (main.yml)
   # to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -16,11 +19,17 @@ jobs:
           fetch-depth: 0
           lfs: true
       
+      - name: Remove large files from Git history
+        run: |
+          pip install git-filter-repo
+          git filter-repo --path videos/medical_report_analyzer_video.mp4 --invert-paths
+          git reflog expire --expire=now --all
+          git gc --prune=now --aggressive
+      
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-
         run: |
           git config --global credential.helper store
-          git remote set-url origin https://Lalit1997:${{secrets.HF_TOKEN}}@huggingface.co/spaces/Lalit1997/medical-report-analyzer
+          git remote set-url origin https://Lalit1997:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Lalit1997/medical-report-analyzer
           git push --force origin main
