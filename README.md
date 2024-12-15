@@ -1,10 +1,13 @@
 ---
 title: medical-report-analyzer
-emoji: 🐳
-colorFrom: purple
-colorTo: gray
+emoji: 😻
+colorFrom: red
+colorTo: purple
 sdk: streamlit
-app_port: 7860
+sdk_version: 1.41.0
+app_file: app.py
+pinned: false
+license: mit
 ---
 ## Medical Report Analysis Using LLM
 
